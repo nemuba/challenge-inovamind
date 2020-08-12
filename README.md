@@ -36,7 +36,7 @@ Endpoints:
         "quote" : "String: Aprender nunca será demais",
         "auhtor": "String: Alef O. de Oliveira",
         "author_about": "String: Programador Entusiasta",
-        "tags": [":search_tag: ['learn','life', 'live']"]
+        "tags": [":search_tag"]
       }
   ]
 }
@@ -53,7 +53,7 @@ Endpoints:
         "quote" : "String: Sempre em busca do melhor",
         "auhtor": "String: Alef O. de Oliveira",
         "author_about": "String: Programador Entusiasta",
-        "tags": [":search_tag: ['learn','life', 'live']"]
+        "tags": ["learn","life", "live"]
       }
   ]
 }
@@ -67,7 +67,9 @@ require 'nokogiri'
 require 'open-uri'
 
 class CrawlerService
+
   attr_accessor :quotes,:search
+  
   def initialize(search)
     @search = search
     @quotes = []
