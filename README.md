@@ -103,7 +103,10 @@ class CrawlerService
 end
 ```
 
-* **Deploy da API:** on Heroku [API](http://site.com)
+* **Deploy da API:** on Heroku [Visitar](https://challenge-inovamind.herokuapp.com/)
+
+
+* **Conexão com MongoDB utilizando:**  [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
 *Muito obrigado pela oportunidade de participar desse desafio, em cada desafio sempre um novo aprendizado, e aprender nunca será demais !*
 
