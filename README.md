@@ -23,7 +23,9 @@ Ferramentas utilizadas:
 * Services ( CrawlerService )
 
 
-Endpoint:
+Endpoints:
+
+* Buscar os quotes por tags:
 
 ```json
 # GET /quotes/:search_tag
@@ -31,16 +33,34 @@ Endpoint:
 { 
   "quotes": [
       {
-        "quote" : "String: Description",
-        "auhtor": "String: Author name",
-        "author_about": "String: Link to author about",
-        "tags": ["Array of the tags"]
+        "quote" : "String: Aprender nunca será demais",
+        "auhtor": "String: Alef O. de Oliveira",
+        "author_about": "String: Programador Entusiasta",
+        "tags": [":search_tag: ['learn','life', 'live']"]
       }
   ]
 }
 ```
 
-Service criado para buscar os quotes:
+* Buscar todos os quotes:
+
+```json
+# GET /quotes
+
+{ 
+  "quotes": [
+      {
+        "quote" : "String: Sempre em busca do melhor",
+        "auhtor": "String: Alef O. de Oliveira",
+        "author_about": "String: Programador Entusiasta",
+        "tags": [":search_tag: ['learn','life', 'live']"]
+      }
+  ]
+}
+```
+
+
+* Service criado para buscar os quotes do site mencionado no desafio:
 
 ```ruby
 require 'nokogiri'
@@ -80,3 +100,16 @@ class CrawlerService
   
 end
 ```
+
+* **Deploy da API:** on Heroku [API](http://site.com)
+
+*Muito obrigado pela oportunidade de participar desse desafio, em cada desafio sempre um novo aprendizado, e aprender nunca será demais !*
+
+
+
+
+**Facebook:** [Alef Ojeda de Oliveira](https://www.facebook.com/AlefOjedaOliveira)
+
+**Linkedin:** [Alef Ojeda de Oliveira](https://www.linkedin.com/in/alef-ojeda/)
+
+**Email:** [Alef Ojeda de Oliveira](mailto:nemubatubag@gmail.com)
