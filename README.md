@@ -28,7 +28,7 @@ Endpoints:
 * Buscar os quotes por tags:
 
 ```json
-# GET /quotes/:search_tag
+# GET api/v1/quotes/:search_tag
 
 { 
   "quotes": [
@@ -45,7 +45,7 @@ Endpoints:
 * Buscar todos os quotes:
 
 ```json
-# GET /quotes
+# GET api/v1/quotes
 
 { 
   "quotes": [
